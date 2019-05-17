@@ -24,3 +24,14 @@ ggplot(data = irisSetosa, aes(y = Sepal.Length, x = Petal.Length)) +
   geom_point() +
   geom_smooth(method = "lm")
 
+
+#Read in the versicolor dataset
+irisVersi <- readRDS("../versicolor.rds")
+
+#Plot sepal length vs. petal length with regression line for versicolor
+ggplot(data = irisVersi, aes(y = Sepal.Length, x = Petal.Length)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+
+
