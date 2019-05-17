@@ -1,6 +1,8 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
+#This program analyzes our datasets and creates plots
+
 setwd("~/Boston University/BSA_Seminar")
 library(dplyr)
 library(ggplot2)
