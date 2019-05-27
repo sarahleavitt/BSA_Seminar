@@ -1,6 +1,8 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
+#Creating subsets of iris dataset by species
+
 setwd("~/Boston University/BSA_Seminar")
 library(dplyr)
 
