@@ -1,8 +1,6 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
-#Performing linear regression on iris dataset
-
 setwd("~/Boston University/BSA_Seminar")
 library(dplyr)
 library(ggplot2)
