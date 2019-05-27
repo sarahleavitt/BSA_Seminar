@@ -1,8 +1,6 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
-#This program analyzes our datasets and creates plots
-
 setwd("~/Boston University/BSA_Seminar")
 library(dplyr)
 library(ggplot2)
@@ -25,15 +23,5 @@ summary(m)
 ggplot(data = irisSetosa, aes(y = Sepal.Length, x = Petal.Length)) +
   geom_point() +
   geom_smooth(method = "lm")
-
-
-#Read in the versicolor dataset
-irisVersi <- readRDS("../versicolor.rds")
-
-#Plot sepal length vs. petal length with regression line for versicolor
-ggplot(data = irisVersi, aes(y = Sepal.Length, x = Petal.Length)) +
-  geom_point() +
-  geom_smooth(method = "lm")
-
 
 
