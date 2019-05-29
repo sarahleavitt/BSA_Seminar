@@ -1,8 +1,6 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
-#Performs analysis
-
 setwd("~/Boston University/Git Seminar Materials/BSA_Seminar")
 library(dplyr)
 library(ggplot2)
@@ -23,14 +21,6 @@ summary(m)
 
 #Plot sepal length vs. petal length with regression line
 ggplot(data = irisSetosa, aes(y = Sepal.Length, x = Petal.Length)) +
-  geom_point() +
-  geom_smooth(method = "lm")
-
-
-#Read in the versicolor
-irisVersi <- readRDS("../versicolor.rds")
-
-ggplot(data = irisVersi, aes(y = Sepal.Length, x = Petal.Length)) +
   geom_point() +
   geom_smooth(method = "lm")
 
