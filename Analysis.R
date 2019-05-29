@@ -1,6 +1,8 @@
 #Sarah Leavitt
 #BSA Seminar 5/30/19
 
+#Performs analysis
+
 setwd("~/Boston University/Git Seminar Materials/BSA_Seminar")
 library(dplyr)
 library(ggplot2)
