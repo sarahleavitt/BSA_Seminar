@@ -10,6 +10,7 @@ library(ggplot2)
 
 #Read in the dataset
 irisSetosa <- readRDS("../setosa.rds")
+irisVersis <- readRDS("../versicolor.rds")
 
 #Plot sepal length vs. petal length
 ggplot(data = irisSetosa, aes(y = Sepal.Length, x = Petal.Length)) +
@@ -24,3 +25,7 @@ ggplot(data = irisSetosa, aes(y = Sepal.Length, x = Petal.Length)) +
   geom_point() +
   geom_smooth(method = "lm")
 
+#Plot sepal length vs. petal length with regression line
+ggplot(data = irisVersi, aes(y = Sepal.Length, x = Petal.Length)) +
+  geom_point() +
+  geom_smooth(method = "lm")
